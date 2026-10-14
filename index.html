@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic portfolio of Your Name — research, publications, and education.">
+  <title>Your Name — Academic Portfolio</title>
+  <style>
+    :root { --ink: #262923; --muted: #666c62; --paper: #f7f6f1; --line: #d9d9cf; --accent: #52634d; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Georgia, 'Times New Roman', serif; line-height: 1.65; }
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    a:hover { color: #283b29; }
+    .wrap { width: min(1040px, calc(100% - 48px)); margin: 0 auto; }
+    header { border-bottom: 1px solid var(--line); }
+    .top { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; gap: 24px; }
+    .wordmark { font-size: 17px; letter-spacing: .04em; text-decoration: none; color: var(--ink); }
+    nav { display: flex; gap: 25px; font: 13px/1.4 Arial, sans-serif; }
+    nav a { color: var(--muted); text-decoration: none; }
+    nav a:hover { color: var(--ink); }
+    .hero { padding: 92px 0 78px; display: grid; grid-template-columns: 1.55fr .8fr; gap: 72px; align-items: center; }
+    .eyebrow, .section-label { text-transform: uppercase; letter-spacing: .16em; font: 11px/1.4 Arial, sans-serif; color: var(--accent); }
+    h1 { font-weight: 400; font-size: clamp(46px, 7vw, 76px); line-height: 1.02; letter-spacing: -.045em; margin: 18px 0 22px; }
+    .intro { font-size: 19px; max-width: 640px; color: #4d514a; }
+    .links { display: flex; gap: 22px; margin-top: 28px; font: 13px Arial, sans-serif; }
+    .portrait { aspect-ratio: 4 / 5; max-height: 320px; border: 1px solid var(--line); background: linear-gradient(145deg,#e4e4db,#d5d8cc); display: grid; place-items: center; color: #707568; text-align: center; padding: 24px; font: 12px/1.6 Arial,sans-serif; }
+    main section { border-top: 1px solid var(--line); padding: 54px 0 58px; display: grid; grid-template-columns: 200px 1fr; gap: 40px; }
+    h2 { font-size: 25px; font-weight: 400; margin: 0; }
+    h3 { font-size: 18px; font-weight: 400; margin: 0 0 4px; }
+    .section-label { margin-top: 7px; }
+    .body-copy { max-width: 700px; color: #4d514a; }
+    .body-copy p:first-child { margin-top: 0; }
+    .item { padding: 0 0 23px; margin-bottom: 23px; border-bottom: 1px solid var(--line); }
+    .item:last-child { border: 0; padding-bottom: 0; margin-bottom: 0; }
+    .meta { color: var(--muted); font: 12px/1.6 Arial,sans-serif; }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 16px; }
+    .tag { border: 1px solid var(--line); padding: 5px 10px; color: #555b51; font: 12px Arial,sans-serif; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0 40px; display: flex; justify-content: space-between; color: var(--muted); font: 12px Arial,sans-serif; }
+    @media (max-width: 700px) { .wrap { width: min(100% - 34px, 560px); } .top { align-items: flex-start; flex-direction: column; gap: 14px; } nav { gap: 16px; flex-wrap: wrap; } .hero { padding: 60px 0; grid-template-columns: 1fr; gap: 28px; } .portrait { aspect-ratio: 16/8; max-height: none; } main section { grid-template-columns: 1fr; gap: 17px; padding: 38px 0; } footer { gap: 15px; flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <a class="wordmark" href="#top">YOUR NAME</a>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+    </div>
+  </header>
+  <div class="wrap" id="top">
+    <section class="hero" aria-labelledby="name">
+      <div>
+        <div class="eyebrow">Researcher · [Field / Department]</div>
+        <h1 id="name">Your Name</h1>
+        <p class="intro">I am a [role or degree] at [institution], where I study [brief description of your research]. My work brings together [area] and [area] to better understand [central question or impact].</p>
+        <div class="links"><a href="mailto:your.email@example.com">Email</a><a href="#publications">Selected work ↓</a><a href="https://scholar.google.com/">Google Scholar ↗</a></div>
+      </div>
+      <div class="portrait" role="img" aria-label="Placeholder for a portrait photo">Portrait photograph<br>Replace this block with your image</div>
+    </section>
+    <main>
+      <section id="about"><div class="section-label">01 / About</div><div class="body-copy"><h2>A little about my work</h2><p>Write a concise introduction here: your current position, the questions that motivate you, and the perspective you bring to your field. A few thoughtful sentences are plenty.</p><p>Outside research, I enjoy [interests, teaching, or community work].</p></div></section>
+      <section id="research"><div class="section-label">02 / Research</div><div><h2>Research interests</h2><div class="tags"><span class="tag">Research area one</span><span class="tag">Research area two</span><span class="tag">Research area three</span><span class="tag">Methods / approaches</span></div><div class="body-copy"><p>Briefly describe your current or future research directions, including the questions and methods you care about.</p></div></div></section>
+      <section id="publications"><div class="section-label">03 / Publications</div><div><h2>Selected publications</h2><div class="body-copy" style="margin-top:24px">
+        <article class="item"><h3>“Title of your article or chapter”</h3><div class="meta">Your Name, Co-author Name · <em>Journal Name</em> · 2025</div><a href="#">View publication ↗</a></article>
+        <article class="item"><h3>“Title of another publication”</h3><div class="meta">Your Name · <em>Conference or Publisher</em> · 2024</div><a href="#">View publication ↗</a></article>
+        <p><a href="#">See all publications ↗</a></p>
+      </div></div></section>
+      <section id="education"><div class="section-label">04 / Education</div><div><h2>Education & experience</h2><div class="body-copy" style="margin-top:24px">
+        <article class="item"><h3>[Degree], [Field]</h3><div class="meta">[University] · [Year–Year]</div><p>Thesis: “[Thesis title]” · Advisor: [Name]</p></article>
+        <article class="item"><h3>[Position or fellowship]</h3><div class="meta">[Institution] · [Year–Year]</div><p>One line describing your work or contribution.</p></article>
+      </div></div></section>
+      <section id="contact"><div class="section-label">05 / Contact</div><div class="body-copy"><h2>Get in touch</h2><p>For research enquiries, collaboration, or speaking invitations, I’d be glad to hear from you.</p><p><a href="mailto:your.email@example.com">your.email@example.com</a><br>[Department or institution] · [City, Country]</p></div></section>
+    </main>
+    <footer><span>© <span id="year">2026</span> Your Name</span><span>Made for the open web</span></footer>
+  </div>
+</body>
+</html>
