@@ -5,37 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Academic portfolio of Thomas George P, a PhD researcher in astronomy at IIT Indore.">
   <title>Thomas George P — Astronomy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root { --ink: #262923; --muted: #666c62; --paper: #f7f6f1; --line: #d9d9cf; --accent: #52634d; }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Georgia, 'Times New Roman', serif; line-height: 1.65; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Source Sans 3', Arial, sans-serif; font-size: 17px; line-height: 1.72; }
+    h1, h2, h3, .wordmark { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; }
     a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 4px; }
     a:hover { color: #283b29; }
     .wrap { width: min(1040px, calc(100% - 48px)); margin: 0 auto; }
     header { border-bottom: 1px solid var(--line); }
     .top { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; gap: 24px; }
-    .wordmark { font-size: 17px; letter-spacing: .04em; text-decoration: none; color: var(--ink); }
-    nav { display: flex; gap: 25px; font: 13px/1.4 Arial, sans-serif; }
+    .wordmark { font-size: 20px; letter-spacing: .055em; text-decoration: none; color: var(--ink); }
+    nav { display: flex; gap: 25px; font: 500 14px/1.4 'Source Sans 3', Arial, sans-serif; }
     nav a { color: var(--muted); text-decoration: none; }
     nav a:hover { color: var(--ink); }
-    .hero { padding: 92px 0 78px; display: grid; grid-template-columns: 1.55fr .8fr; gap: 72px; align-items: center; }
-    .eyebrow, .section-label { text-transform: uppercase; letter-spacing: .16em; font: 11px/1.4 Arial, sans-serif; color: var(--accent); }
-    h1 { font-weight: 400; font-size: clamp(46px, 7vw, 76px); line-height: 1.02; letter-spacing: -.045em; margin: 18px 0 22px; }
-    .intro { font-size: 19px; max-width: 640px; color: #4d514a; }
-    .links { display: flex; gap: 22px; margin-top: 28px; font: 13px Arial, sans-serif; }
+    .hero { padding: 100px 0 86px; display: grid; grid-template-columns: 1.55fr .8fr; gap: 72px; align-items: center; }
+    .eyebrow, .section-label { text-transform: uppercase; letter-spacing: .16em; font: 600 12px/1.4 'Source Sans 3', Arial, sans-serif; color: var(--accent); }
+    h1 { font-weight: 400; font-size: clamp(58px, 8vw, 92px); line-height: .91; letter-spacing: -.035em; margin: 20px 0 25px; }
+    .intro { font-size: 21px; line-height: 1.55; max-width: 640px; color: #4d514a; }
+    .links { display: flex; gap: 22px; margin-top: 30px; font: 500 15px 'Source Sans 3', Arial, sans-serif; }
     .portrait { width: 100%; height: 320px; border: 1px solid var(--line); object-fit: cover; object-position: center 34%; display: block; }
     main section { border-top: 1px solid var(--line); padding: 54px 0 58px; display: grid; grid-template-columns: 200px 1fr; gap: 40px; }
-    h2 { font-size: 25px; font-weight: 400; margin: 0; }
-    h3 { font-size: 18px; font-weight: 400; margin: 0 0 4px; }
+    h2 { font-size: 32px; line-height: 1.1; font-weight: 500; margin: 0; letter-spacing: -.015em; }
+    h3 { font-size: 23px; line-height: 1.15; font-weight: 500; margin: 0 0 5px; }
     .section-label { margin-top: 7px; }
     .body-copy { max-width: 700px; color: #4d514a; }
     .body-copy p:first-child { margin-top: 0; }
     .item { padding: 0 0 23px; margin-bottom: 23px; border-bottom: 1px solid var(--line); }
     .item:last-child { border: 0; padding-bottom: 0; margin-bottom: 0; }
-    .meta { color: var(--muted); font: 12px/1.6 Arial,sans-serif; }
+    .meta { color: var(--muted); font: 14px/1.6 'Source Sans 3', Arial,sans-serif; }
     .tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 16px; }
-    .tag { border: 1px solid var(--line); padding: 5px 10px; color: #555b51; font: 12px Arial,sans-serif; }
+    .tag { border: 1px solid var(--line); padding: 6px 12px; color: #555b51; font: 14px 'Source Sans 3', Arial,sans-serif; }
     footer { border-top: 1px solid var(--line); padding: 24px 0 40px; display: flex; justify-content: space-between; color: var(--muted); font: 12px Arial,sans-serif; }
     @media (max-width: 700px) { .wrap { width: min(100% - 34px, 560px); } .top { align-items: flex-start; flex-direction: column; gap: 14px; } nav { gap: 16px; flex-wrap: wrap; } .hero { padding: 60px 0; grid-template-columns: 1fr; gap: 28px; } .portrait { aspect-ratio: 16/8; max-height: none; } main section { grid-template-columns: 1fr; gap: 17px; padding: 38px 0; } footer { gap: 15px; flex-direction: column; } }
   </style>
@@ -52,13 +56,13 @@
       <div>
         <div class="eyebrow">PhD Researcher · Astronomy · IIT Indore</div>
         <h1 id="name">Thomas<br>George P</h1>
-        <p class="intro">I am a PhD student in Astronomy at the Indian Institute of Technology Indore, working with Dr. Priyanka Singh. My research explores the connection between circumgalactic medium (CGM) and active galactic nuclei(AGN) with insights from X-ray observations.</p>
+        <p class="intro">I am a PhD student in Astronomy at the Indian Institute of Technology Indore, working with Dr. Priyanka Singh. My research explores the halo occupation distribution of active galactic nuclei and their place in large-scale cosmic environments.</p>
         <div class="links"><a href="mailto:phd2401121006@iiti.ac.in">Email</a><a href="#research">Research ↓</a><a href="https://github.com/thomasgp30">GitHub ↗</a></div>
       </div>
       <img class="portrait" src="profile.jpg" alt="Thomas George P outdoors by the coast">
     </section>
     <main>
-      <section id="about"><div class="section-label">01 / About</div><div class="body-copy"><h2>About</h2><p>I am a doctoral researcher in Astronomy at IIT Indore, supervised by Dr. Priyanka Singh. I study how active galactic nuclei (AGN) occupy dark matter halos and how they impact the baryon distribution in the circumgalactic medium.</p><p>My broader interests include the circumgalactic medium and the distribution of baryons around galaxies, with the aim of understanding the flows of matter and energy that shape galaxy evolution.</p></div></section>
+      <section id="about"><div class="section-label">01 / About</div><div class="body-copy"><h2>About</h2><p>I am a doctoral researcher in Astronomy at IIT Indore, supervised by Dr. Priyanka Singh. I study how active galactic nuclei (AGN) occupy dark matter halos and how they relate to the large-scale structure of the Universe.</p><p>My broader interests include the circumgalactic medium and the distribution of baryons around galaxies, with the aim of understanding the flows of matter and energy that shape galaxy evolution.</p></div></section>
       <section id="research"><div class="section-label">02 / Research</div><div><h2>Research interests</h2><div class="tags"><span class="tag">Active galactic nuclei</span><span class="tag">Halo occupation distribution</span><span class="tag">Galaxy environments</span><span class="tag">Circumgalactic medium</span><span class="tag">Galaxy evolution</span><span class="tag">Cosmology</span></div><div class="body-copy"><p>My current work uses cross-correlations of eROSITA X-ray AGNs and DESI data to investigate the halo occupation distribution of AGNs. I am also interested in the circumgalactic medium and the cosmic distribution of baryons.</p></div></div></section>
       <section id="publications"><div class="section-label">03 / Research output</div><div><h2>Publication in preparation</h2><div class="body-copy" style="margin-top:24px">
         <article class="item"><h3>The Halo Occupation Distribution of X-ray AGNs from eROSITA–DESI Cross-Correlations</h3><div class="meta">Thomas George P, Priyanka Singh, Subhabrata Majumdar, and Alexandre Refregier · In preparation</div></article>
@@ -71,8 +75,8 @@
         <article class="item"><h3>MSc, Physics</h3><div class="meta">Mar Athanasius College, Kothamangalam · 2019–2021 · Third position</div></article>
         <article class="item"><h3>BSc, Physics</h3><div class="meta">St Peter’s College, Kolenchery · 2016–2019</div></article>
         <article class="item"><h3>Teaching Assistant</h3><div class="meta">Department of Astronomy, Astrophysics and Space Engineering, IIT Indore · July 2024–present</div></article>
-        <article class="item"><h3>Guest Assistant Professor</h3><div class="meta">SCMS School of Engineering and Technology · September 2023–May 2024</div></article>
-        <article class="item"><h3>Guest Assistant Professor</h3><div class="meta">MES College, Marampally · November 2021–November 2022</div></article>
+        <article class="item"><h3>Assistant Professor (Guest)</h3><div class="meta">SCMS School of Engineering and Technology · September 2023–May 2024</div></article>
+        <article class="item"><h3>Assistant Professor (Guest) </h3><div class="meta">MES College, Marampally · November 2021–November 2022</div></article>
       </div></div></section>
       <section id="highlights"><div class="section-label">05 / Highlights</div><div><h2>Selected highlights</h2><div class="body-copy" style="margin-top:24px">
         <article class="item"><h3>Short Term Collaborative Research Fellowship</h3><div class="meta">IIT Indore · 2026–2027 · Research visit to SISSA, Trieste</div></article>
